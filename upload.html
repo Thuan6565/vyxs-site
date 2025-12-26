@@ -29,7 +29,7 @@
 
     <textarea id="desc" placeholder="Description"></textarea>
 
-    <input id="link" type="text" placeholder="Script link (GitHub / Pastebin / Raw)">
+    <input id="link" type="text" placeholder="Script link (GitHub / Pastebin / Raw) or script">
 
     <button class="ui-button" onclick="uploadScript()">
         Upload
@@ -58,8 +58,7 @@ ${link}
 Submitted via VyXs Upload Page`;
 
     const issueUrl =
-`https://github.com/USERNAME/REPO/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(issueBody)}`;
-
+`https://github.com/Thuan6565/script-Vyxs/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(issueBody)}`;
     window.open(issueUrl, "_blank");
 }
 </script>
