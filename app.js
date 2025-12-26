@@ -55,37 +55,4 @@ function openGit(url) {
     window.open(url, "_blank");
 }
 
-<script>
-function uploadScript() {
-    const title = document.getElementById("title").value;
-    const desc  = document.getElementById("desc").value;
-    const link  = document.getElementById("link").value;
-
-    if (!title || !link) {
-        alert("Please fill required fields");
-        return;
-    }
-
-    const issueBody =
-`### Script Description
-${desc}
-
-### Script Link
-${link}
-
-### Submitted via VyXs`;
-
-    const issueUrl =
-`https://github.com/Thuan6565/script-Vyxs/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(issueBody)}`;
-
-    // Hiện thông báo
-    const toast = document.getElementById("toast");
-    toast.style.display = "block";
-
-    // Ẩn sau khi chuyển
-    setTimeout(() => {
-        window.location.href = issueUrl;
-    }, 1800); // 1.8s
-}
-</script>
 
